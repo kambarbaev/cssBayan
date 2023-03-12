@@ -12,98 +12,96 @@ body {
   /* align-items: center; */
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-@media only screen and (max-width: 1920px) {
-  .cssbayan {
-    width: 60%;
-  }
-  .cssbayan__title {
-    font-size: 2.8rem;
-    text-align: center;
-    padding-bottom: 0.6rem;
-    background: -webkit-linear-gradient(45deg, #ce3636, #de1cf8,#03c1f0,#03f003);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-bottom: 0.125rem solid rgba(192, 191, 191, 0.527);
-  }
-  
-  .cssbayan__item {
-    /* border: 1px solid red; */
-  }
-  .cssbayan__label {
-    display: flex;
-    flex-direction: column;
-    padding-top: 0.6rem;
-    padding-bottom: 1.2rem;
-    border-bottom: 0.125rem solid rgba(192, 191, 191, 0.527);
-    /* border: 1px solid green; */
-    cursor: pointer;
-  }
-  .cssbayan__header {
-    order: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: blue;
-    transition: all .2s ease-in;
-  }
-  .cssbayan__subtitle {
-    font-size: 1.6rem;
-  }
-  .cssbayan__btn {
-    font-size: 1.7rem;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: all .2s ease-in;
-  }
-  .cssbayan__input {
-    appearance: none;
-    order: 2;
-  }
-  .cssbayan__content {
-    /* text-align: center; */
-    display: flex;
-    justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    height: 0;
-    width: 0;
-    order: 3;
-    transition: all .2s ease-in;
-  }
-  .cssbayan__content .cssbayan__img {
-    transition: all .3s ease-in;
-  }
-  .cssbayan__content .cssbayan__img img {
-    width: 100%;
-    max-height: 20rem;
-    object-fit: cover;
-  }
-  .cssbayan__content:active + .cssbayan__header .cssbayan__btn,
-  .cssbayan__content:active + .cssbayan__header .cssbayan__subtitle {
-    color: blue;
-  }
-  .cssbayan__content:active .cssbayan__img {
-    opacity: 0.5;
-    transition: all .3s ease-in;
-  }
-  .cssbayan__input:checked + .cssbayan__content {
-    opacity: 1;
-    padding: 0.6rem 0;
-    visibility: visible;
-    pointer-events: all;
-    height: auto;
-    width: auto;
-    transition: all .3s ease-in;
-  }
-  .cssbayan__input:checked ~ .cssbayan__header .cssbayan__subtitle{
-    color: rgb(0, 0, 0);
-  }
-  .cssbayan__input:checked ~ .cssbayan__header .cssbayan__btn{
-    transform: rotate(45deg);
-    color: black;
-  }
+
+.cssbayan {
+  width: 60%;
+}
+.cssbayan__title {
+  font-size: 2.8rem;
+  text-align: center;
+  padding-bottom: 0.6rem;
+  background: -webkit-linear-gradient(45deg, #ce3636, #de1cf8,#03c1f0,#03f003);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 0.125rem solid rgba(192, 191, 191, 0.527);
+}
+.cssbayan__item {
+  /* border: 1px solid red; */
+}
+.cssbayan__label {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.6rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 0.125rem solid rgba(192, 191, 191, 0.527);
+  /* border: 1px solid green; */
+  cursor: pointer;
+}
+.cssbayan__header {
+  order: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: blue;
+  transition: all .2s ease-in;
+}
+.cssbayan__subtitle {
+  font-size: 1.6rem;
+}
+.cssbayan__btn {
+  font-size: 1.7rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all .2s ease-in;
+}
+.cssbayan__input {
+  appearance: none;
+  order: 2;
+}
+.cssbayan__content {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  height: 0;
+  width: 0;
+  order: 3;
+  transition: all .2s ease-in;
+}
+.cssbayan__content .cssbayan__img {
+  transition: all .3s ease-in;
+}
+.cssbayan__content .cssbayan__img img {
+  width: 100%;
+  max-height: 20rem;
+  object-fit: cover;
+}
+.cssbayan__content:active + .cssbayan__header .cssbayan__btn,
+.cssbayan__content:active + .cssbayan__header .cssbayan__subtitle {
+  color: blue;
+}
+.cssbayan__content:active .cssbayan__img {
+  opacity: 0.5;
+  transition: all .3s ease-in;
+}
+.cssbayan__input:checked + .cssbayan__content {
+  opacity: 1;
+  padding: 0.6rem 0;
+  visibility: visible;
+  pointer-events: all;
+  height: auto;
+  width: auto;
+  transition: all .3s ease-in;
+}
+.cssbayan__input:checked ~ .cssbayan__header .cssbayan__subtitle{
+  color: rgb(0, 0, 0);
+}
+.cssbayan__input:checked ~ .cssbayan__header .cssbayan__btn{
+  transform: rotate(45deg);
+  color: black;
 }
 @media only screen and (max-width: 820px) and (min-width: 451px){
   .cssbayan {
